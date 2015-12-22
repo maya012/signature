@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/toolsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true"
+        >
+        <Button
+            android:id="@+id/colorBtn"
+            android:drawableTop="@drawable/color"
+            android:drawablePadding="2dp"
+            android:text="Color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/penBtn"
+            android:drawableTop="@drawable/brush"
+            android:drawablePadding="2dp"
+            android:text="Brush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/undoBtn"
+            android:drawableTop="@drawable/undo"
+            android:drawablePadding="2dp"
+            android:text="Undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toolsLayout"
+        android:layout_above="@+id/saveBtnLayout"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/saveBtnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffffff"
+        android:layout_alignParentBottom="true"
+        >
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_weight="1"
+                android:text="Save"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/clearBtn"
+                android:layout_weight="1"
+                android:text="Clear"
+                android:textAllCaps="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

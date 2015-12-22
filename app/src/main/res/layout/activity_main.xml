@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_weight="3"
+            android:textSize="15sp"
+            android:text="Signature"
+            android:textAllCaps="true"
+            android:layout_marginRight="5dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/icon_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+        <Button
+            android:id="@+id/sortBtn"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort"
+            android:textAllCaps="true"/>
+        <Button
+            android:id="@+id/filterBtn"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/signList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titleLayout"
+        android:layout_above="@+id/newBtnLayout">
+    </ListView>
+    <LinearLayout
+        android:padding="5dp"
+        android:id="@+id/newBtnLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_marginRight="5dp"
+            android:id="@+id/newBtn"
+            android:layout_weight="1"
+            android:text="new"
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="#000000" />
+        <Button
+            android:id="@+id/closeBtn"
+            android:layout_weight="1"
+            android:text="close"
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+</RelativeLayout>
+
+
